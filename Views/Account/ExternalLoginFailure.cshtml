@@ -5,4 +5,7 @@
 <hgroup>
     <h2>@ViewData["Title"].</h2>
     <h3 class="text-danger">Unsuccessful login with service.</h3>
+    @if(ViewData.ContainsKey("Error")){
+        <p class="text-danger">@ViewData["Error"]</p>
+     }
 </hgroup>
